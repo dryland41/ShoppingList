@@ -10,3 +10,9 @@ https://youtu.be/HEfTIOBqjII
 
 MVVM ShoppingList App - REPOSITORY, VIEWMODEL, VIEWMODELFACTORY - Part 3
 https://youtu.be/kxWnqHBDIrg
+
+MVVM ShoppingList App - SETTING UP THE RECYCLERVIEW - Part 4
+https://youtu.be/0-QcAecGqtc
+
+MVVM ShoppingList App - ADD ITEMS WITH A CUSTOM DIALOG - Part 5
+https://youtu.be/Y92Omqo_AlA

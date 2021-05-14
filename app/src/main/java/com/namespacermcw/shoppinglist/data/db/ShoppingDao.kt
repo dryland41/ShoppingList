@@ -1,11 +1,13 @@
-package com.namespacermcw.shoppinglist
+package com.namespacermcw.shoppinglist.data.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import com.namespacermcw.shoppinglist.data.db.entities.ShoppingItem
 
 /**
  * The Dao tells room how the application will need to access the database
 * */
+@Entity
 @Dao
 interface ShoppingDao {
     // The suspend keyword notifies the compiler that these functions can be
