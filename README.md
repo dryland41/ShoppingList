@@ -16,3 +16,6 @@ https://youtu.be/0-QcAecGqtc
 
 MVVM ShoppingList App - ADD ITEMS WITH A CUSTOM DIALOG - Part 5
 https://youtu.be/Y92Omqo_AlA
+
+MVVM ShoppingList App - KODEIN DEPENDENCY INJECTION - Part 6
+https://youtu.be/8Pl1EVgenkg
