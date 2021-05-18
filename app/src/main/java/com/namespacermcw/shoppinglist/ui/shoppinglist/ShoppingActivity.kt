@@ -11,16 +11,24 @@ import com.namespacermcw.shoppinglist.data.db.ShoppingDatabase
 import com.namespacermcw.shoppinglist.data.db.entities.ShoppingItem
 import com.namespacermcw.shoppinglist.data.repo.ShoppingRepository
 import kotlinx.android.synthetic.main.activity_shopping.*
+import org.kodein.di.KodeinAware
+import org.kodein.di.android.kodein
+import org.kodein.di.generic.instance
 
-class ShoppingActivity : AppCompatActivity() {
+class ShoppingActivity : AppCompatActivity(), KodeinAware {
+
+    override val kodein by kodein()
+    private val factory: ShoppingViewModelFactory by instance()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shopping)
 
         // Instantiating singletons here makes their existence depend on the ShoppingActivity.
-        val database = ShoppingDatabase(this)
-        val repository = ShoppingRepository(database)
-        val factory = ShoppingViewModelFactory(repository)
+        // REPLACED WITH DI
+        // val database = ShoppingDatabase(this)
+        // val repository = ShoppingRepository(database)
+        // val factory = ShoppingViewModelFactory(repository)
 
         val viewModel = ViewModelProviders.of(this, factory).get(ShoppingViewModel::class.java)
 
